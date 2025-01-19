@@ -36,37 +36,40 @@
             font-size: 2.8em;
             font-weight: bold;
         }
-        header nav {
-            margin-top: 20px;
-        }
-        header nav a {
-            color: #f0b90b;
-            margin: 0 20px;
-            text-decoration: none;
-            font-size: 1.2em;
-            font-weight: bold;
-        }
-        header nav a:hover {
-            color: #e0a800;
-            text-decoration: underline;
-        }
 
-        /* 小字样式 */
-        .header-note {
-            font-size: 1.4em;
+        /* 流程提示和按钮的合并样式 */
+        .header-process {
+            font-size: 1.2em;
             color: #f0b90b;
             margin-top: 20px;
             display: flex;
             justify-content: center;
-            gap: 30px;
+            align-items: center;
+            gap: 40px;
             font-weight: bold;
             text-transform: uppercase;
+            border-top: 2px solid #f0b90b;
+            padding-top: 15px;
         }
-        .header-note div {
-            padding: 8px 20px;
+        .header-process .step {
+            padding: 10px 15px;
             border: 2px solid #f0b90b;
             border-radius: 5px;
             background-color: #333a47;
+        }
+        .header-process .step a {
+            color: #f0b90b;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 15px;
+            border: 2px solid #f0b90b;
+            border-radius: 5px;
+            background-color: #333a47;
+            transition: background-color 0.3s ease;
+        }
+        .header-process .step a:hover {
+            background-color: #f0b90b;
+            color: #1d1f26;
         }
 
         section {
@@ -160,9 +163,6 @@
             header h1 {
                 font-size: 2.2em;
             }
-            header nav a {
-                font-size: 1em;
-            }
             section {
                 padding: 20px;
             }
@@ -176,18 +176,14 @@
     <header>
         <img src="binance-logo.png" alt="Binance">
         <h1>币安注册教程 - 简单三步快速上手</h1>
-        <!-- 优化的小字区域 -->
-        <div class="header-note">
-            <div>1 注册</div>
-            <div>2 下载</div>
-            <div>3 认证</div>
+
+    
+        <div class="header-process">
+            <div class="step"><a href="#step1">1 注册</a></div>
+            <div class="step"><a href="#step2">2 下载</a></div>
+            <div class="step"><a href="#step3">3 认证</a></div>
+            <div class="step"><a href=“#QA”>常见问题</a></div>
         </div>
-        <nav>
-            <a href="#">注册</a>
-            <a href="#step2">下载App</a>
-            <a href="#step3">常见问题</a>
-            <a href="#long-doc">更多教程</a>
-        </nav>
     </header>
 
     <section id="step1">
@@ -209,7 +205,15 @@
         </div>
     </section>
 
-    <section id="step3">
+ <section id="step3”>
+        <h2>认证</h2>
+        <div class="step">
+            <h3>下载并安装币安App</h3>
+            <p>请使用个人真实信息直接认证即可：</p>         
+        </div>
+    </section>
+
+    <section id="QA">
         <h2>QA：常见问题解答</h2>
         <div class="step">
             <h3>👇🏻遇到问题不要慌，看这里👇🏻</h3>
@@ -220,16 +224,15 @@
                 </div>
                 <div>
                     <h3>Q: 注册失败怎么办？</h3>
-                    <p>A: 确保使用真实信息注册。如有疑问，请联系APP客服。</p>
+                    <p>A: 确保使用真实信息注册。如有疑问，请联系客服。</p>
                 </div>
                 <div>
                     <h3>Q: 忘记密码怎么办？</h3>
                     <p>A: 点击登录页面的“忘记密码”，按照提示重置您的账户密码。</p>
-                </div>
-            </ul>
-        </div>
+               </div>
     </section>
-
-    <section class="long-doc" id="long-doc">
-        <h3>更多使用使用教程</h3>
-        <p>以下是详细的操作指南，帮助您深入了解币安的使用
+    <footer>
+        <p>币安注册教程 | 本页面仅供信息参考</p>
+    </footer>
+</body>
+</html>
