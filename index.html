@@ -20,11 +20,12 @@
             color: #fff;
         }
         header {
-            background-color: #f0b90b; /* 币安黄色 */
-            color: #1d1f26; /* 黑色 */
-            padding: 30px 0;
+            background-color: #1d1f26; /* 黑色背景 */
+            color: #f0b90b; /* 币安黄色 */
+            padding: 30px 20px;
             text-align: center;
-            border-bottom: 3px solid #1d1f26; /* 边框增强分割感 */
+            border-bottom: 3px solid #f0b90b;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
         header img {
             max-width: 150px;
@@ -39,10 +40,10 @@
             margin-top: 20px;
         }
         header nav a {
-            color: #1d1f26;
+            color: #f0b90b;
             margin: 0 20px;
             text-decoration: none;
-            font-size: 1.1em;
+            font-size: 1.2em;
             font-weight: bold;
         }
         header nav a:hover {
@@ -113,6 +114,29 @@
             color: #f0b90b;
             font-size: 1.4em;
         }
+        /* 长文档内容样式 */
+        .long-doc {
+            background-color: #333a47;
+            padding: 30px;
+            border-radius: 8px;
+            margin-top: 40px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .long-doc h3 {
+            color: #f0b90b;
+            font-size: 1.8em;
+            margin-top: 0;
+        }
+        .long-doc p {
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+        .long-doc ul {
+            padding-left: 20px;
+        }
+        .long-doc ul li {
+            margin-bottom: 10px;
+        }
         @media (max-width: 768px) {
             header h1 {
                 font-size: 2.2em;
@@ -121,6 +145,9 @@
                 font-size: 1em;
             }
             section {
+                padding: 20px;
+            }
+            .long-doc {
                 padding: 20px;
             }
         }
@@ -134,6 +161,7 @@
             <a href="#step1">注册</a>
             <a href="#step2">下载App</a>
             <a href="#step3">使用教程</a>
+            <a href="#long-doc">长文档教程</a>
         </nav>
     </header>
 
@@ -168,22 +196,16 @@
         </div>
     </section>
 
-    <section class="faq">
-        <h2>常见问题解答（FAQ）</h2>
-        <div>
-            <h3>Q: 网络连接失败怎么办？</h3>
-            <p>A: 请直接在app左上角的设置里清除缓存并重启app。</p>
-        </div>
-        <div>
-            <h3>Q: 注册失败怎么办？</h3>
-            <p>A: 确保使用真实信息注册。如有疑问，请联系客服。</p>
-        </div>
-        <div>
-            <h3>Q: 忘记密码怎么办？</h3>
-            <p>A: 点击登录页面的“忘记密码”，按照提示重置您的账户密码。</p>
-        </div>
+    <section class="long-doc" id="long-doc">
+        <h3>完整的币安使用教程</h3>
+        <p>以下是详细的操作指南，帮助您深入了解币安的使用流程：</p>
+        <ul>
+            <li>如何完成注册和实名认证</li>
+            <li>如何进行市场分析和交易</li>
+            <li>如何设置安全措施和防范网络风险</li>
+            <li>如何使用币安的附加功能（例如：Launchpad、Staking等）</li>
+        </ul>
+        <p>更多的教程内容会在后续进行补充，确保您能够充分掌握币安平台的所有功能。</p>
     </section>
 
-    <footer>
-        <p>币安注册教程 | 本页面仅供信息参考</p>
-   
+    <section class
