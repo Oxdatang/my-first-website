@@ -50,11 +50,23 @@
             color: #e0a800;
             text-decoration: underline;
         }
+
         /* 小字样式 */
         .header-note {
-            font-size: 0.8em;
+            font-size: 1.4em;  /* 增大字体 */
             color: #f0b90b;
             margin-top: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .header-note div {
+            padding: 5px 15px;
+            border: 2px solid #f0b90b;
+            border-radius: 5px;
+            background-color: #333a47;
+            font-size: 1.3em;
+            font-weight: bold;
         }
 
         section {
@@ -164,9 +176,11 @@
     <header>
         <img src="binance-logo.png" alt="币安 Logo">
         <h1>币安注册教程 - 简单三步快速上手</h1>
-        <!-- 添加的小字 -->
+        <!-- 修改的小字区域 -->
         <div class="header-note">
-            先注册 - 再下载 - 后认证
+            <div>1 注册</div>
+            <div>2 下载</div>
+            <div>3 认证</div>
         </div>
         <nav>
             <a href="#">注册</a>
@@ -209,13 +223,4 @@
                     <p>A: 确保使用真实信息注册。如有疑问，请联系客服。</p>
                 </div>
                 <div>
-                    <h3>Q: 忘记密码怎么办？</h3>
-                    <p>A: 点击登录页面的“忘记密码”，按照提示重置您的账户密码。</p>
-                </div>
-            </ul>
-        </div>
-    </section>
-
-    <section class="long-doc" id="long-doc">
-        <h3>完整的币安使用教程</h3>
-        <p>以下是详细的操作指南，帮助您深入了解币安的使用
+                   
