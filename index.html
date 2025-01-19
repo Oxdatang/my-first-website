@@ -7,10 +7,6 @@
     <meta name="keywords" content="币安注册, 币安教程, 币安下载, 加密货币交易, 币安指南">
     <meta name="author" content="你的名字">
     <title>币安注册教程 - 简单三步快速上手</title>
-
-    <!-- Favicon 图标 -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -20,184 +16,105 @@
             color: #fff;
         }
         header {
-            background-color: #1d1f26;
-            color: #f0b90b;
-            padding: 30px 20px;
+            background-color: #f0b90b; /* 币安黄色 */
+            color: #1d1f26; /* 黑色 */
+            padding: 20px 0;
             text-align: center;
-            border-bottom: 3px solid #f0b90b;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        }
-        header img {
-            max-width: 150px;
-            margin-bottom: 15px;
         }
         header h1 {
             margin: 0;
-            font-size: 2.8em;
-            font-weight: bold;
+            font-size: 2.5em;
         }
-
-        /* 流程提示和按钮的合并样式 */
-        .header-process {
-            font-size: 1.2em;
-            color: #f0b90b;
-            margin-top: 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 40px;
-            font-weight: bold;
-            text-transform: uppercase;
-            border-top: 2px solid #f0b90b;
-            padding-top: 15px;
+        header nav {
+            margin-top: 10px;
         }
-        .header-process .step {
-            padding: 10px 15px;
-            border: 2px solid #f0b90b;
-            border-radius: 5px;
-            background-color: #333a47;
-        }
-        .header-process .step a {
-            color: #f0b90b;
-            text-decoration: none;
-            font-weight: bold;
-            padding: 5px 15px;
-            border: 2px solid #f0b90b;
-            border-radius: 5px;
-            background-color: #333a47;
-            transition: background-color 0.3s ease;
-        }
-        .header-process .step a:hover {
-            background-color: #f0b90b;
+        header nav a {
             color: #1d1f26;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1.1em;
         }
-
+        header nav a:hover {
+            text-decoration: underline;
+        }
         section {
-            padding: 30px 20px;
+            padding: 20px;
             max-width: 900px;
             margin: auto;
-            background: #2c2f3c;
-            border-radius: 10px;
-            margin-bottom: 40px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            background: #2c2f3c; /* 深色背景 */
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
         section h2 {
-            color: #f0b90b;
+            color: #f0b90b; /* 币安黄色 */
             margin-top: 30px;
-            font-size: 2em;
         }
         section p {
-            line-height: 1.8;
+            line-height: 1.6;
             margin: 15px 0;
         }
         .step {
             background-color: #333a47;
-            padding: 25px;
-            border-radius: 8px;
+            padding: 15px;
+            border-radius: 5px;
             margin: 20px 0;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         .step h3 {
-            color: #f0b90b;
+            color: #f0b90b; /* 币安黄色 */
             margin: 0;
-            font-size: 1.6em;
         }
         button {
             display: inline-block;
-            background-color: #f0b90b;
+            background-color: #f0b90b; /* 币安黄色 */
             color: #1d1f26;
-            padding: 12px 20px;
+            padding: 10px 15px;
             border: none;
-            border-radius: 8px;
+            border-radius: 5px;
             cursor: pointer;
             text-decoration: none;
-            font-size: 1.2em;
-            margin-top: 15px;
-            transition: all 0.3s ease;
+            font-size: 1em;
         }
         button:hover {
-            background-color: #e0a800;
-            transform: translateY(-2px);
+            background-color: #e0a800; /* 稍深的黄色 */
         }
         footer {
-            background-color: #1d1f26;
+            background-color: #1d1f26; /* 黑色 */
             color: #fff;
-            padding: 20px 0;
+            padding: 10px 0;
             text-align: center;
-            font-size: 1.1em;
         }
         .faq {
-            background-color: #333a47;
-            padding: 25px;
-            border-radius: 8px;
+            background-color: #2c2f3c; /* 深色背景 */
+            padding: 20px;
+            border-radius: 5px;
             margin-top: 30px;
+            text-align: left;
         }
         .faq h3 {
-            color: #f0b90b;
-            font-size: 1.4em;
-        }
-        /* 长文档内容样式 */
-        .long-doc {
-            background-color: #333a47;
-            padding: 30px;
-            border-radius: 8px;
-            margin-top: 40px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .long-doc h3 {
-            color: #f0b90b;
-            font-size: 1.8em;
-            margin-top: 0;
-        }
-        .long-doc p {
-            line-height: 1.8;
-            margin-bottom: 20px;
-        }
-        .long-doc ul {
-            padding-left: 20px;
-        }
-        .long-doc ul li {
-            margin-bottom: 10px;
-        }
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 2.2em;
-            }
-            section {
-                padding: 20px;
-            }
-            .long-doc {
-                padding: 20px;
-            }
+            color: #f0b90b; /* 币安黄色 */
         }
     </style>
 </head>
 <body>
     <header>
-        <img src="binance-logo.png" alt="Binance">
-        <h1>币安注册教程 - 简单三步快速上手</h1>
-
-    
+        <h1>币安注册教程</h1>
         <nav>
-            <a href="#step1">1:注册</a>
-            <a href="#step2">2:下载App</a>
-            <a href="#step3">3:认证</a>
-            <a href="#QA">常见问题</a>
+            <a href=" ">注册</a>
+            <a href="#step2">下载App</a>
+            <a href="#step3">使用教程</a>
         </nav>
-  
     </header>
-
     <section id="step1">
-        <h2>注册币安账户</h2>
+        <h2>步骤1：注册币安账户</h2>
         <div class="step">
             <h3>点击以下链接完成注册</h3>
             <p>链接1：<a href="https://www.marketwebb.ac/join?ref=FZ8NXIPD&utm_medium=web_share_copy" target="_blank"><button>立即注册</button></a></p>
             <p>链接2：<a href="https://accounts.binance.com/zh-CN/register?ref=PSUZ6PW9" target="_blank"><button>备用链接</button></a></p>
         </div>
     </section>
-
     <section id="step2">
-        <h2>下载币安App</h2>
+        <h2>步骤2：下载币安App</h2>
         <div class="step">
             <h3>下载并安装币安App</h3>
             <p>点击👇🏻下载币安App：</p>
@@ -205,32 +122,31 @@
             <a href="https://www.marketwebb.ac/zh-CN/download-guide" target="_blank"><button>IOS下载指南</button></a>
         </div>
     </section>
-
- <section id="step3”>
-    <h2> 认证 </h2>
+    <section id="step3">
+        <h2>步骤3：开始使用币安</h2>
         <div class="step">
-            <h3>在app进行认证</h3>
-            <p>请使用个人真实信息直接认证即可：</p>         
+            <h3>参考以下教程，快速上手</h3>
+            <ul>
+                <li>如何充值：<a href="https://www.binance.com/cn/support" target="_blank">查看教程</a></li>
+                <li>如何购买：<a href="https://www.binance.com/cn/support" target="_blank">查看教程</a></li>
+                <li>安全设置：<a href="https://www.binance.com/cn/support" target="_blank">查看教程</a></li>
+            </ul>
         </div>
     </section>
-
-    <section id="QA">
-        <h2>QA：常见问题</h2>
-        <div class="step">
-            <h3>👇🏻遇到问题不要慌，看这里👇🏻</h3>
-            <ul>
-                <div>
-                    <h3>Q: 网络连接失败怎么办？</h3>
-                    <p>A: 请直接在app左上角的设置里清除缓存并重启app。</p>
-                </div>
-                <div>
-                    <h3>Q: 注册失败怎么办？</h3>
-                    <p>A: 确保使用真实信息注册。如有疑问，请联系客服。</p>
-                </div>
-                <div>
-                    <h3>Q: 忘记密码怎么办？</h3>
-                    <p>A: 点击登录页面的“忘记密码”，按照提示重置您的账户密码。</p>
-               </div>
+    <section class="faq">
+        <h2>常见问题解答（FAQ）</h2>
+        <div>
+            <h3>Q: 网络连接失败怎么办？</h3>
+            <p>A: 请直接在app左上角的设置里清除缓存并重启app。</p>
+        </div>
+        <div>
+            <h3>Q: 注册失败怎么办？</h3>
+            <p>A: 确保使用真实信息注册。如有疑问，请联系客服。</p>
+        </div>
+        <div>
+            <h3>Q: 忘记密码怎么办？</h3>
+            <p>A: 点击登录页面的“忘记密码”，按照提示重置您的账户密码。</p>
+        </div>
     </section>
     <footer>
         <p>币安注册教程 | 本页面仅供信息参考</p>
